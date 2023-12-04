@@ -1,0 +1,138 @@
+html {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+main {
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#photo {
+    height: 600px;
+    width: 1200px;
+}
+
+.middle-container {
+    position: relative;
+}
+
+.gray-container {
+    position: absolute;
+    bottom: 0px;
+    height: 150px;
+    background-color: rgb(0 0 0 / 30%);
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.gray-container h1 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.gray-container p {
+    font-size: 22px;
+    margin: 10px 10px 0px 10px;
+    color: lightgrey;
+}
+
+#forward img {
+    transform: rotate(0.5turn);
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.shuffle {
+    width: 30px;
+    height: 60px;
+}
+
+.shuffle:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#backward,
+#forward {
+    width: 60px;
+    background-color: aliceblue;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+}
+
+#main-img {
+    display: flex;
+    box-shadow: 0px 3px 5px 0px grey;
+}
+
+
+ul {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 15px 200px;
+    margin: 0px;
+}
+
+.thumbnail {
+    margin-top: 60px;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    list-style-type: none;
+    box-shadow: 0px 3px 5px 0px grey;
+    position: relative;
+}
+
+.title {
+    display: none;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -150px;
+}
+
+.thumbnail:hover .title {
+    display: block;
+}
+
+.thumbnail img {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 13px 10px 0px grey;
+}
+
+.thumbnail.checked {
+    box-shadow: 0px 13px 10px 0px grey;
+}
+
+.thumbnail.checked .title {
+    display: block;
+}
